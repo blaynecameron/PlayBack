@@ -1,3 +1,3 @@
 #PlayBack - Blayne Chong#
 
-Experimenting with AVFoundation and AVAudioEngine effects.
+Experimenting with AVFoundation, recording and playback as well as manipulating and distorting the recording.
