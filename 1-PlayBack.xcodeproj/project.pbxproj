@@ -15,6 +15,9 @@
 		BBAF519D1C5D518A00A0E157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAF519B1C5D518A00A0E157 /* LaunchScreen.storyboard */; };
 		BBAF51A81C5D518A00A0E157 /* __PlayBackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAF51A71C5D518A00A0E157 /* __PlayBackTests.m */; };
 		BBAF51B31C5D518A00A0E157 /* __PlayBackUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAF51B21C5D518A00A0E157 /* __PlayBackUITests.m */; };
+		BBAF51CA1C5D65ED00A0E157 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAF51C91C5D65ED00A0E157 /* AVFoundation.framework */; };
+		BBAF51CD1C5D77A900A0E157 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAF51CC1C5D77A900A0E157 /* QuartzCore.framework */; };
+		BBAF51D01C5D89C400A0E157 /* PlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAF51CF1C5D89C400A0E157 /* PlaybackViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		BBAF51AE1C5D518A00A0E157 /* 1-PlayBackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "1-PlayBackUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAF51B21C5D518A00A0E157 /* __PlayBackUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __PlayBackUITests.m; sourceTree = "<group>"; };
 		BBAF51B41C5D518A00A0E157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBAF51C91C5D65ED00A0E157 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BBAF51CC1C5D77A900A0E157 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BBAF51CE1C5D89C400A0E157 /* PlaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackViewController.h; sourceTree = "<group>"; };
+		BBAF51CF1C5D89C400A0E157 /* PlaybackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaybackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBAF51CD1C5D77A900A0E157 /* QuartzCore.framework in Frameworks */,
+				BBAF51CA1C5D65ED00A0E157 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				BBAF518C1C5D518A00A0E157 /* 1-PlayBack */,
+				BBAF51CB1C5D660100A0E157 /* Frameworks */,
 				BBAF51A61C5D518A00A0E157 /* 1-PlayBackTests */,
 				BBAF51B11C5D518A00A0E157 /* 1-PlayBackUITests */,
 				BBAF518B1C5D518A00A0E157 /* Products */,
@@ -105,6 +115,8 @@
 				BBAF51911C5D518A00A0E157 /* AppDelegate.m */,
 				BBAF51931C5D518A00A0E157 /* ViewController.h */,
 				BBAF51941C5D518A00A0E157 /* ViewController.m */,
+				BBAF51CE1C5D89C400A0E157 /* PlaybackViewController.h */,
+				BBAF51CF1C5D89C400A0E157 /* PlaybackViewController.m */,
 				BBAF51961C5D518A00A0E157 /* Main.storyboard */,
 				BBAF51991C5D518A00A0E157 /* Assets.xcassets */,
 				BBAF519B1C5D518A00A0E157 /* LaunchScreen.storyboard */,
@@ -138,6 +150,15 @@
 				BBAF51B41C5D518A00A0E157 /* Info.plist */,
 			);
 			path = "1-PlayBackUITests";
+			sourceTree = "<group>";
+		};
+		BBAF51CB1C5D660100A0E157 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBAF51CC1C5D77A900A0E157 /* QuartzCore.framework */,
+				BBAF51C91C5D65ED00A0E157 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBAF51951C5D518A00A0E157 /* ViewController.m in Sources */,
+				BBAF51D01C5D89C400A0E157 /* PlaybackViewController.m in Sources */,
 				BBAF51921C5D518A00A0E157 /* AppDelegate.m in Sources */,
 				BBAF518F1C5D518A00A0E157 /* main.m in Sources */,
 			);
@@ -417,6 +439,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BlayneCameron.--PlayBack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -428,6 +451,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "BlayneCameron.--PlayBack";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -498,6 +522,7 @@
 				BBAF51B91C5D518A00A0E157 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBAF51BA1C5D518A00A0E157 /* Build configuration list for PBXNativeTarget "1-PlayBackTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +531,7 @@
 				BBAF51BC1C5D518A00A0E157 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBAF51BD1C5D518A00A0E157 /* Build configuration list for PBXNativeTarget "1-PlayBackUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +540,7 @@
 				BBAF51BF1C5D518A00A0E157 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

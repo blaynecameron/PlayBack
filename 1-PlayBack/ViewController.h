@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import "PlaybackViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AVAudioRecorderDelegate>
 
+@property (strong, nonatomic) AVAudioPlayer *player;
+@property (strong, nonatomic) AVAudioRecorder *recorder;
+@property (weak, nonatomic) IBOutlet UIButton *stopButtonEnabled;
+@property (weak, nonatomic) IBOutlet UIButton *recordButtonEnabled;
+
+- (IBAction)recordButton:(id)sender;
+- (IBAction)stopButton:(id)sender;
 
 @end
 
