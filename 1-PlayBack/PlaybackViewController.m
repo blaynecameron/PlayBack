@@ -35,6 +35,7 @@
 #pragma mark - Custom Method
 -(void)playRate: (float)playSpeed {
     [player stop];
+    [playerNode stop];
     
     player = [[AVAudioPlayer alloc] initWithContentsOfURL:recorder.url error:nil];
     
@@ -69,6 +70,7 @@
 
 -(void)audioEngineAndNodeSetup {
     [player stop];
+    [playerNode stop];
     
     // stops audio engine and resets nodes
     [engine stop];
