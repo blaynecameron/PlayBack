@@ -6,16 +6,16 @@
 //  Copyright © 2016 Blayne Chong. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RecordViewController.h"
 
-@interface ViewController ()
+@interface RecordViewController ()
 {
     AVAudioSession *session;
     CABasicAnimation *flashingAnimation;
 }
 @end
 
-@implementation ViewController
+@implementation RecordViewController
 
 @synthesize recorder;
 @synthesize player;

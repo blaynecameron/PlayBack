@@ -11,7 +11,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "PlaybackViewController.h"
 
-@interface ViewController : UIViewController <AVAudioRecorderDelegate>
+@interface RecordViewController : UIViewController <AVAudioRecorderDelegate>
 
 @property (strong, nonatomic) AVAudioPlayer *player;
 @property (strong, nonatomic) AVAudioRecorder *recorder;
